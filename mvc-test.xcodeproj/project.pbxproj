@@ -12,6 +12,9 @@
 		05FF75C31DB24B4600F179CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FF75C11DB24B4600F179CB /* Main.storyboard */; };
 		05FF75C51DB24B4600F179CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FF75C41DB24B4600F179CB /* Assets.xcassets */; };
 		05FF75C81DB24B4600F179CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FF75C61DB24B4600F179CB /* LaunchScreen.storyboard */; };
+		05FF75D51DB2526C00F179CB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FF75D41DB2526C00F179CB /* Person.swift */; };
+		05FF75D71DB25A2800F179CB /* msn-people-person-profile-user-icon--icon-search-engine-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 05FF75D61DB25A2800F179CB /* msn-people-person-profile-user-icon--icon-search-engine-16.png */; };
+		05FF75D91DB25DD000F179CB /* PersonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FF75D81DB25DD000F179CB /* PersonImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		05FF75C41DB24B4600F179CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05FF75C71DB24B4600F179CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05FF75C91DB24B4600F179CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05FF75D41DB2526C00F179CB /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		05FF75D61DB25A2800F179CB /* msn-people-person-profile-user-icon--icon-search-engine-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msn-people-person-profile-user-icon--icon-search-engine-16.png"; sourceTree = "<group>"; };
+		05FF75D81DB25DD000F179CB /* PersonImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,57 @@
 		05FF75BC1DB24B4600F179CB /* mvc-test */ = {
 			isa = PBXGroup;
 			children = (
+				05FF75D31DB2525400F179CB /* Util */,
+				05FF75D21DB2524600F179CB /* Resources */,
+				05FF75D11DB2523500F179CB /* View */,
+				05FF75D01DB2522E00F179CB /* Controller */,
+				05FF75CF1DB2522800F179CB /* Model */,
 				05FF75BD1DB24B4600F179CB /* AppDelegate.swift */,
-				05FF75BF1DB24B4600F179CB /* ViewController.swift */,
 				05FF75C11DB24B4600F179CB /* Main.storyboard */,
 				05FF75C41DB24B4600F179CB /* Assets.xcassets */,
 				05FF75C61DB24B4600F179CB /* LaunchScreen.storyboard */,
 				05FF75C91DB24B4600F179CB /* Info.plist */,
 			);
 			path = "mvc-test";
+			sourceTree = "<group>";
+		};
+		05FF75CF1DB2522800F179CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05FF75D41DB2526C00F179CB /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		05FF75D01DB2522E00F179CB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05FF75BF1DB24B4600F179CB /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		05FF75D11DB2523500F179CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05FF75D81DB25DD000F179CB /* PersonImageView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		05FF75D21DB2524600F179CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				05FF75D61DB25A2800F179CB /* msn-people-person-profile-user-icon--icon-search-engine-16.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		05FF75D31DB2525400F179CB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +175,7 @@
 			files = (
 				05FF75C81DB24B4600F179CB /* LaunchScreen.storyboard in Resources */,
 				05FF75C51DB24B4600F179CB /* Assets.xcassets in Resources */,
+				05FF75D71DB25A2800F179CB /* msn-people-person-profile-user-icon--icon-search-engine-16.png in Resources */,
 				05FF75C31DB24B4600F179CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +187,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FF75D51DB2526C00F179CB /* Person.swift in Sources */,
+				05FF75D91DB25DD000F179CB /* PersonImageView.swift in Sources */,
 				05FF75C01DB24B4600F179CB /* ViewController.swift in Sources */,
 				05FF75BE1DB24B4600F179CB /* AppDelegate.swift in Sources */,
 			);
